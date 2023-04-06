@@ -74,10 +74,21 @@ print(fruits)
 
 print("-------------Global Variable-------------------")
 msg = "I am a active learner"
+m = "I am outside function"
+print(m)
 def myFunc():
+    msg = "I am a Java Dev."
+    global m
+    m = "I am changed to global variable.."
     print(msg, "(--Sujan Rijal)")
-
+    print(m)
+# we can also use global keyword if we want to change global variable inside function
 myFunc()
+
+print(msg)
+print(m)
+
+print("-------------Global Variable-------------------")
 
 
 
